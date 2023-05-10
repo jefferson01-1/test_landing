@@ -47,6 +47,45 @@
 <path d="M1104.04 45.648C1105.63 43.872 1107.31 42.264 1109.08 40.824C1110.86 39.384 1112.73 38.16 1114.7 37.152C1116.72 36.096 1118.83 35.304 1121.04 34.776C1123.29 34.2 1125.72 33.912 1128.31 33.912C1132.29 33.912 1135.8 34.584 1138.82 35.928C1141.89 37.224 1144.44 39.096 1146.45 41.544C1148.52 43.944 1150.08 46.848 1151.13 50.256C1152.19 53.664 1152.72 57.432 1152.72 61.56V108H1139.83V61.56C1139.83 56.04 1138.56 51.768 1136.01 48.744C1133.52 45.672 1129.7 44.136 1124.56 44.136C1120.77 44.136 1117.22 45.048 1113.91 46.872C1110.64 48.696 1107.62 51.168 1104.84 54.288V108H1091.95V35.064H1099.65C1101.48 35.064 1102.6 35.952 1103.04 37.728L1104.04 45.648Z" stroke="white" stroke-width="4" mask="url(#path-1-outside-1)"/>
 </svg>
 
+<style>
+.container {
+    position: relative;
+    height: 500px; /* Adjust to match your page height */
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+    background-color: #333; /* Change to your desired button color */
+    color: #fff; /* Change to your desired button text color */
+    font-size: 18px; /* Change to your desired button font size */
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+</style>
+
+<div class="container">
+    <button class="btn">Click me</button>
+</div>
 
 
 
